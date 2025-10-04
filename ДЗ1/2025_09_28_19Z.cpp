@@ -10,11 +10,6 @@ int main(int argc,char** argv)
     printf(" ");
     printf("%d", ia - sh*(ia/sh) );
     printf(" ");
-    if(ia - sh*(ia/sh)==0){
-        printf("0");
-    }
-    else{
-        printf("%d", sh - ( ia - sh*(ia/sh) ) );
-    }
+    printf("%d", (sh - ( ia - sh*(ia/sh) ) )*(ia - sh*(ia/sh)!=0) );
     return 0;
 }
