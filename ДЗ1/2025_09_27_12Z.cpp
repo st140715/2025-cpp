@@ -8,11 +8,6 @@ int main(int argc,char** argv)
     scanf("%d", &n);
     printf("%d", (n-1)/k + 1);
     printf(" ");
-    if( n - k*(n/k) == 0){
-        printf("%d", k);
-    }
-    else{
-        printf("%d", n - k*(n/k) );
-    }
+    printf("%d", (n - k*(n/k) + k*( n - k*(n/k) == 0 ) ));
     return 0;
 }
