@@ -4,7 +4,6 @@ int main(int argc,char** argv)
 {
     int sh = 0;
     scanf("%d", &sh);
-    int sign = (sh > 0) - (sh < 0);
     int ia = 0;
     scanf("%d", &ia);
     printf("%d", ia/sh);
@@ -13,6 +12,6 @@ int main(int argc,char** argv)
     int sign = (k > 0) or (k < 0);
     printf("%d", k );
     printf(" ");
-    printf("%d", (sh - a)*sign );
+    printf("%d", (sh - k)*sign );
     return 0;
 }
