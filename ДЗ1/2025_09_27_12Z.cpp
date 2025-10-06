@@ -8,6 +8,6 @@ int main(int argc,char** argv)
     scanf("%d", &n);
     printf("%d", (n-1)/k + 1);
     printf(" ");
-    printf("%d", (n - k*(n/k) + k*( n - k*(n/k) == 0 ) ));
+    printf("%d", (n-1) % k + 1);
     return 0;
 }
