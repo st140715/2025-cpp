@@ -8,6 +8,6 @@ int main(int argc,char** argv)
     scanf("%d", &n);
     scanf("%d", &a);
     scanf("%d", &b);
-    printf("%d\n", 2*a*b*n);
+    printf("%d\n", 2 * a * b * n);
     return 0;
 }

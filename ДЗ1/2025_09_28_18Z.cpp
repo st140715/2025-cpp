@@ -6,6 +6,6 @@ int main(int argc,char** argv)
     scanf("%d", &a);
     int b = 0;
     scanf("%d", &b);
-    printf("%d\n", 1 + ( a - b*(a/b) )*( b - a*(b/a) ) );
+    printf("%d\n", 1 + ( a - b * (a / b) ) * ( b - a * (b / a) ) );
     return 0;
 }

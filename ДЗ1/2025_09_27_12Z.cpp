@@ -6,8 +6,8 @@ int main(int argc,char** argv)
     scanf("%d", &k);
     int n = 0;
     scanf("%d", &n);
-    printf("%d", (n-1)/k + 1);
+    printf("%d", ((n - 1) / k) + 1);
     printf(" ");
-    printf("%d", (n-1) % k + 1);
+    printf("%d", ((n - 1) % k) + 1);
     return 0;
 }

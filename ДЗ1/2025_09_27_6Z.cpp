@@ -6,8 +6,8 @@ int main(int argc,char** argv)
     scanf("%d", &n);
     int l = 0;
     scanf("%d", &l);
-    printf("%d", l-1);
+    printf("%d", l - 1);
     printf(" ");
-    printf("%d", n-1);
+    printf("%d", n - 1);
     return 0;
 }
