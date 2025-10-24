@@ -12,7 +12,7 @@ int main(int argc, char **argv){
     int x = 0;
     scanf("%d", &x);
     int ver = 1001;
-    int nij = 0;
+    int nij = -1001;
     for (int i = 0; i < n; i++){
         if(a[i] > nij && a[i] <= x){
             nij = a[i];   

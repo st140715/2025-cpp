@@ -1,6 +1,5 @@
 #include <cstdio>
 #include <stdlib.h>
-#define t 1000
 
 int main(int argc, char **argv){
     int n = 0;
