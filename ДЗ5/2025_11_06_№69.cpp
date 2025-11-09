@@ -17,5 +17,6 @@ int main(int argc, char **argv){
     for (int i = 0; i < n; i++){
          printf("%d ", a[i]);
     }
+    free(a);
     return 0;
 }
