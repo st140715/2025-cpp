@@ -1,0 +1,21 @@
+#include <cstdio>
+#include <stdlib.h>
+#include <cmath>
+
+int IsDigit(unsigned char c);
+
+int main(int argc, char **argv){
+    char c = '0';
+    scanf("%c", &c);
+    IsDigit(c);
+    return 0;
+}
+
+int IsDigit(unsigned char c){
+    if(c == '0' || c == '1' || c == '2' || c == '3' || c == '4' || c == '5' || c == '6' || c == '7' || c == '8' || c == '9'){
+        printf("yes");
+        return 0;
+    }
+    printf("no");
+    return 0;
+}
