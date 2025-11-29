@@ -1,0 +1,58 @@
+#include <cstdio>
+#include <stdlib.h>
+#include <cmath>
+
+typedef struct{
+    int m;
+    int f;
+    int i;
+}Stu;
+
+int main(int argc, char **argv){
+    int n = 0;
+    scanf("%d ", &n);
+    Stu* s = (Stu*)malloc(n * sizeof(Stu));
+    Stu ot;
+    ot.m = 0;
+    ot.f = 0;
+    ot.i = 0;
+    char w = 'w';
+    int i = 0;
+    while(i < n){
+        while(!(w == '0' || w == '1' || w == '2' || w == '3' || w == '4' || w == '5' || w == '6' || w == '7' ||  w == '8' ||  w == '9')){
+            scanf("%c", &w); //игнорируем все символы кроме цифр.
+        }
+        s[i].m = w - '0'; //оценка по математике
+        ot.m = ot.m + s[i].m;
+        w = 'w';
+
+        while(!(w == '0' || w == '1' || w == '2' || w == '3' || w == '4' || w == '5' || w == '6' || w == '7' ||  w == '8' ||  w == '9')){
+            scanf("%c", &w); //игнорируем все символы кроме цифр.
+        }
+        s[i].f = w - '0'; //Физика
+        ot.f = ot.f + s[i].f;
+        w = 'w';
+
+        while(!(w == '0' || w == '1' || w == '2' || w == '3' || w == '4' || w == '5' || w == '6' || w == '7' ||  w == '8' ||  w == '9')){
+            scanf("%c", &w); //игнорируем все символы кроме цифр.
+        }
+        s[i].i = w - '0'; //Информатика
+        ot.i = ot.i + s[i].i;
+        w = 'w';
+        
+        i = i + 1;
+    }
+    
+    double otm = (ot.m + 0.0) / n;
+    double otf = (ot.f + 0.0) / n;
+    double oti = (ot.i + 0.0) / n;
+  
+    printf("%lf", otm);
+    printf(" ");
+    printf("%lf", otf);
+    printf(" ");
+    printf("%lf", oti);
+    
+    free(s);
+    return 0;
+}
