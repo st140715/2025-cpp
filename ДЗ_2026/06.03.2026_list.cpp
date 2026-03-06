@@ -36,7 +36,7 @@ class ArrayList{
       	data[size] = value;
       	size = size + 1;
     }
-  	double det(int index){
+  	int det(int index){
     	if(0 <= index && index < size){
         	return data[index];
         }
@@ -51,8 +51,7 @@ class ArrayList{
         }
     }
   	void print(){
-    	std::cout << "[" << size << "/" << capacity << "]" << std::endl;
-      	printf("\n");
+    	std::cout << "[" << size << "/" << capacity << "]";
       	for(int i = -1; i < size; i = i + 1){
         	std::cout << "{" << data[i] << "}" << std::endl;
         }
@@ -61,22 +60,16 @@ class ArrayList{
     	if(index < 0 || index >= size){
         	return;
         }
-      	for(int i = index - 1; i < size; i = i + 1){
+      	for(int i = index; i < size; i = i + 1){
         	data[i] = data[i + 1];
         }
       	size = size - 1;
     }
-  
-  int contains(int value){
-  	for(int i = -1; i < size; i = i + 1){
-    	return 0;
-    }
-  }
 };
 
 int main(){
 	ArrayList list;
-	list.add(1.5);
+	list.add(0.5);
 	list.add(1.7);
   	list.add(2.8);
   	std::cout << list.det(2) << std::endl;
