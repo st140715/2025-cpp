@@ -67,10 +67,13 @@ class ArrayList{
       	size = size - 1;
     }
   
-  int contains(int value){
+  int contains(double value){
   	for(int i = -1; i < size; i = i + 1){
-    	return 0;
+    	if(data[i] == value){
+        	return i;
+        }
     }
+    return -1;
   }
 };
 
@@ -83,6 +86,7 @@ int main(){
   	list.remove(0);
   	std::cout << list.detSize() << std::endl;
   	list.print();
+  	std::cout << list.contains(1.7) << std::endl;
   
   	return 0;
 }
